@@ -1,0 +1,102 @@
+<%- include('../head') %>
+<body>
+    <style>
+        .row{
+            background-color: #FECECD;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+        }        
+        .row_2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .social_button{
+            width: 35px;
+            height: 35px;
+            background-color: #FECECD;
+            border: 0px solid transparent;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .vertical_center{
+            position: relative;
+            top: 30%;
+            transform: translateY(-50%,-50%);
+        }
+        .vertical_center_bot{
+            position: relative;
+            top:20%;
+            transform: translateY(-50%,-50%);
+        }
+        .social_button:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .navbar_button{
+            width: 210px;
+            height: 50px;
+        }
+        .primary{
+            background-color: #F2C4CD;
+        }
+        .secondary{
+            background-color: #D9D9D9;
+        }
+        .navbar_button:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+    </style>
+    <link href = "./navbar_top.css" rel = "stylement" type="text/css">
+    <div class = "row">
+        <div class="col-1">
+            <img src = "/onlineCourse/public/img/Logo.png" alt =  "logo" style= "width: 40px; margin-left: 40px">
+        </div>
+        <div class="col-6 mt-2">
+            <p class="text-muted" style = "font-size: 20px; width: 400px;">台湾留学で高校生の中国語学習をサポート</p>
+        </div>
+        <div class="col-3 vertical_center">
+            <div class="input-group rounded" style = " width: 270px;height: 40px margin-left:10px"  >
+                <input type="search" class="form-control rounded-5 " placeholder="Search" aria-label="Search" aria-describedby="search-addon" style = "width: 175px; height: 40px" />
+                <button class = "btn" style = "top: -10px;"><iconify-icon icon="ant-design:search-outlined" width = 40px height = 45px ></iconify-icon></button>
+            </div>
+        </div>
+        <div class="col-2 vertical_center">
+            <button class = "social_button ">
+                <iconify-icon icon="bi:line" width = 30px height = 30px></iconify-icon>
+            </button>
+            <button class = "social_button">
+                <iconify-icon icon="akar-icons:instagram-fill" width = 30px height = 30px></iconify-icon>
+            </button>
+            <button class = "social_button">
+                <iconify-icon icon="akar-icons:facebook-fill" width = 30px height = 30px></iconify-icon>
+            </button>
+            <button class = "social_button">
+                <iconify-icon icon="ant-design:youtube-filled" width = 30px height = 30px></iconify-icon>
+            </button>
+        </div>
+    </div>
+    <div class="navbar_bot">
+        <div class="row_2">
+            <button class = "navbar_button primary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">HOME</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">オンライン学習</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">先生のプロフィール</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">QnA</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">私たちに関しては </p>
+            </button>
+        </div>
+    </div>
+
+</body>
