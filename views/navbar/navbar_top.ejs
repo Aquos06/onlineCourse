@@ -9,11 +9,6 @@
             height: 100px;
             justify-content: space-between;
         }        
-        .row_2{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
         .social_button{
             width: 35px;
             height: 35px;
@@ -36,27 +31,17 @@
         .social_button:hover{
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
-        .navbar_button{
-            width: 210px;
-            height: 50px;
-        }
-        .primary{
-            background-color: #F2C4CD;
-        }
-        .secondary{
-            background-color: #D9D9D9;
-        }
-        .navbar_button:hover{
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
+
     </style>
     <link href = "./navbar_top.css" rel = "stylement" type="text/css">
     <div class = "row">
         <div class="col-1">
-            <img src = "/img/Logo.png" alt =  "logo" style= "width: 40px; margin-left: 40px">
+            <button style = "background-color: transparent; border: none; position: relative; top: 15%;">
+                <img src = "/img/Logo.png" alt =  "logo" style= "width:120px;height: 70px; ">
+            </button>
         </div>
         <div class="col-6 mt-2">
-            <p class="text-muted" style = "font-size: 20px; width: 400px;">台湾留学で高校生の中国語学習をサポート</p>
+            <p class="text-muted" style = "font-size: 20px; width: 400px; margin-left: 20px">台湾留学で高校生の中国語学習をサポート</p>
         </div>
         <div class="col-3 vertical_center">
             <div class="input-group rounded" style = " width: 270px;height: 40px; margin-left:10px"  >
@@ -79,24 +64,6 @@
             </button>
         </div>
     </div>
-    <div class="navbar_bot">
-        <div class="row_2">
-            <button class = "navbar_button primary" style = "border: 0px solid transparent">
-                <p class = "vertical_center_bot">HOME</p>
-            </button>
-            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                <p class = "vertical_center_bot">オンライン学習</p>
-            </button>
-            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                <p class = "vertical_center_bot">先生のプロフィール</p>
-            </button>
-            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                <p class = "vertical_center_bot">QnA</p>
-            </button>
-            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                <p class = "vertical_center_bot">私たちに関しては </p>
-            </button>
-        </div>
-    </div>
+
 
 </body>
