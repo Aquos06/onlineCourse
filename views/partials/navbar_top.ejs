@@ -1,4 +1,4 @@
-<%- include('../head') %>
+<%- include('head') %>
 <body>
     <style>
         .row{
@@ -23,6 +23,15 @@
             text-decoration: none;
             color: black;
         }
+        .signin_button{
+            border: 0 transparent;
+            width: 80px;
+            margin-left:10px;
+            background-color: #FECECD;
+        }
+        .signin_button:hover{
+            background-color: #9edef3;
+        }
     </style>
     <link href = "./navbar_top.css" rel = "stylement" type="text/css">
     <div class = "row">
@@ -31,13 +40,16 @@
                 <img src = "/img/Logo.png" alt =  "logo" style= "width:120px;height: 70px; ">
             </a>
         </div>
-        <div class="col-6 mt-2">
+        <div class="col-5 mt-2">
             <p class="text-muted" style = "font-size: 15px; width: 400px; margin-left: 20px">台湾留学で高校生の中国語学習をサポート</p>
         </div>
-        <div class="col-3 vertical_center">
-            <div class="input-group rounded" style = " width: 250px;height: 40px; margin-left:10px"  >
-                <input type="search" class="form-control rounded-5 " placeholder="Search" aria-label="Search" aria-describedby="search-addon" style = "width: 175px; height: 40px" />
-                <a class = "social_hyperlink" href = "/" style = " margin-left: 10px;top: -10px;"><iconify-icon icon="ant-design:search-outlined" width = 40px height = 45px ></iconify-icon></a>
+        <div class="col-4 vertical_center">
+            <div style = "display: flex; flex-direction: row; position:relative; float:right">
+                <div class="input-group rounded" style = " width: 250px;height: 40px; margin-left:10px"  >
+                    <input type="search" class="form-control rounded-5 " placeholder="Search" aria-label="Search" aria-describedby="search-addon" style = "width: 175px; height: 40px" />
+                    <a class = "social_hyperlink" href = "/" style = " margin-left: 10px;top: -10px;"><iconify-icon icon="ant-design:search-outlined" width = 40px height = 45px ></iconify-icon></a>
+                </div>
+                <button class = "signin_button rounded-3" href = "/"><a href = "/signin" style = "text-decoration: none; color: black">Sign In</a></button>
             </div>
         </div>
         <div class="col-2 vertical_center">

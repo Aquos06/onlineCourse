@@ -25,6 +25,11 @@ app.set('views', path.join(__dirname, 'views'))
 app.get('/', (req, res)=> {
     res.render('home')
 })
+
+app.get('/signin', (req,res) => {
+    res.render('signin')
+})
+
 app.listen(3000, ()=>{
     console.log('Listening on port 3000')
 })

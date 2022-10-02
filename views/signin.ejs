@@ -1,0 +1,72 @@
+<%- include('./partials/head') %>
+<body>
+    <style>
+        .signin_card{
+            height: 400px;
+            width: 400px;
+            background-color: #bdedfd;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            top:10%;
+        }
+        .row_2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .navbar_button{
+            width: 210px;
+            height: 50px;
+        }
+          .primary{
+            background-color: #F2C4CD;
+        }
+          .secondary{
+            background-color: #D9D9D9;
+        }
+          .navbar_button:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }  
+    </style>
+    <%- include('./partials/navbar')%>
+    <div style = "height: 600px; background-color:#fde4e2">
+        <div class="navbar_bot">
+            <div class="row_2">
+                <button class = "navbar_button primary" style = "border: 0px solid transparent">
+                    <p class = "vertical_center_bot">HOME</p>
+                </button>
+                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                    <p class = "vertical_center_bot">オンライン学習</p>
+                </button>
+                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                    <p class = "vertical_center_bot">先生のプロフィール</p>
+                </button>
+                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                    <p class = "vertical_center_bot">QnA</p>
+                </button>
+                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                    <p class = "vertical_center_bot">私たちに関しては </p>
+                </button>
+            </div>
+          </div>
+        <div class="signin_card">
+            <div class = "pt-5">
+                <h3 class = "text-center"><strong>ログイン</strong></h3>
+                <div class = "mt-4"style = "margin-left: 20px">
+                    <h5><strong>ユーザー名</strong></h5>
+                    <input style = "background-color: #fde4e2; border-radius: 10px; margin-left:20px; width: 300px ">
+                </div>
+                <div class = "mt-4"style = "margin-left: 20px">
+                    <h5><strong>パスワード</strong></h5>
+                    <input style = "background-color: #fde4e2; border-radius: 10px; margin-left:20px; width: 300px ">
+                </div>
+        
+                <button class = "btn rounded-5 mt-3" style = "background-color: #FECECD; position:relative; float:right; margin-right:20px"><a>ログイン</a></button>
+                <br>
+                <a href = "/" style = "text-decoration: none; margin-left:20px;position: absolute; bottom:40px;color:black">Have not make an account?</a>
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/footer')%>
+</body>
