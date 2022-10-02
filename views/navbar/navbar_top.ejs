@@ -9,15 +9,6 @@
             height: 100px;
             justify-content: space-between;
         }        
-        .social_button{
-            width: 35px;
-            height: 35px;
-            background-color: #FECECD;
-            border: 0px solid transparent;
-            border-radius: 10px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
         .vertical_center{
             position: relative;
             top: 30%;
@@ -28,40 +19,40 @@
             top:20%;
             transform: translateY(-50%,-50%);
         }
-        .social_button:hover{
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        .social_hyperlink{
+            text-decoration: none;
+            color: black;
         }
-
     </style>
     <link href = "./navbar_top.css" rel = "stylement" type="text/css">
     <div class = "row">
         <div class="col-1">
-            <button style = "background-color: transparent; border: none; position: relative; top: 15%;">
+            <a href = "/" style = "position: relative; top: 15%; margin-left:15px" >
                 <img src = "/img/Logo.png" alt =  "logo" style= "width:120px;height: 70px; ">
-            </button>
+            </a>
         </div>
         <div class="col-6 mt-2">
-            <p class="text-muted" style = "font-size: 20px; width: 400px; margin-left: 20px">台湾留学で高校生の中国語学習をサポート</p>
+            <p class="text-muted" style = "font-size: 15px; width: 400px; margin-left: 20px">台湾留学で高校生の中国語学習をサポート</p>
         </div>
         <div class="col-3 vertical_center">
-            <div class="input-group rounded" style = " width: 270px;height: 40px; margin-left:10px"  >
+            <div class="input-group rounded" style = " width: 250px;height: 40px; margin-left:10px"  >
                 <input type="search" class="form-control rounded-5 " placeholder="Search" aria-label="Search" aria-describedby="search-addon" style = "width: 175px; height: 40px" />
-                <button class = "btn" style = "top: -10px;"><iconify-icon icon="ant-design:search-outlined" width = 40px height = 45px ></iconify-icon></button>
+                <a class = "social_hyperlink" href = "/" style = " margin-left: 10px;top: -10px;"><iconify-icon icon="ant-design:search-outlined" width = 40px height = 45px ></iconify-icon></a>
             </div>
         </div>
         <div class="col-2 vertical_center">
-            <button class = "social_button ">
+            <a class = "social_hyperlink" href = "/">
                 <iconify-icon icon="bi:line" width = 30px height = 30px></iconify-icon>
-            </button>
-            <button class = "social_button">
+            </a>
+            <a class = "social_hyperlink" href = "/" style = "margin-left: 10px">
                 <iconify-icon icon="akar-icons:instagram-fill" width = 30px height = 30px></iconify-icon>
-            </button>
-            <button class = "social_button">
+            </a>
+            <a class = "social_hyperlink" href = "/" style = "margin-left: 10px">
                 <iconify-icon icon="akar-icons:facebook-fill" width = 30px height = 30px></iconify-icon>
-            </button>
-            <button class = "social_button">
+            </a>
+            <a class = "social_hyperlink" href = "/" style = "margin-left:15px">
                 <iconify-icon icon="ant-design:youtube-filled" width = 30px height = 30px></iconify-icon>
-            </button>
+            <a>
         </div>
     </div>
 
