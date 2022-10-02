@@ -30,6 +30,10 @@ app.get('/signin', (req,res) => {
     res.render('signin')
 })
 
+app.get('/classes', (req,res) =>{
+    res.render('classes')
+})
+
 app.listen(3000, ()=>{
     console.log('Listening on port 3000')
 })

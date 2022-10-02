@@ -1,25 +1,7 @@
 <%- include('./partials/head.ejs')%>
 <body>
   <style>
-      .row_2{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-  }
-      .navbar_button{
-        width: 210px;
-        height: 50px;
-    }
-      .primary{
-        background-color: #F2C4CD;
-    }
-      .secondary{
-        background-color: #D9D9D9;
-    }
-      .navbar_button:hover{
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }   
-      .container_2{
+    .container_2{
         height: 590px;
         background-color: #fde4e2;
     }
@@ -36,7 +18,7 @@
       position: relative;
       top: 3%;
       transform: translate(30%,50%);
-  }
+    }
     .vertical_center_3{
       position: relative;
       transform: translate(30%,20%);
@@ -76,13 +58,13 @@
   </style>
   <%- include('./partials/navbar')%>
   <div class = "container_2">
-    <div class="navbar_bot">
+    <div class="navbar_bot" style = "background-color: #fde4e2;">
       <div class="row_2">
           <button class = "navbar_button primary" style = "border: 0px solid transparent">
               <p class = "vertical_center_bot">HOME</p>
           </button>
           <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-              <p class = "vertical_center_bot">オンライン学習</p>
+              <a href = "/classes" class = "vertical_center_bot">オンライン学習</a>
           </button>
           <button class = "navbar_button secondary" style = "border: 0px solid transparent">
               <p class = "vertical_center_bot">先生のプロフィール</p>
@@ -103,7 +85,7 @@
           <p style = "font-size: 25px;">語コースを提供します</p>
           <p class="text-muted">テストを受けて自分のレベルを知る</p>
           <button class = "btn rounded-5" style = "background-color: #F2C4CD">
-            <span>テストを受けます</span>
+            <a>テストを受けます</a>
           </button>
         </div>
       </div>
@@ -111,12 +93,9 @@
         <img class = "vertical_center_4" src="/img/mandarin.svg" alt = "picture" style = "width: 700px; height: 457px;">
       </div>
     </div>
-
   </div>
   <div class="container_3">
-
     <h2 class = "text-center pt-5" ><strong>私たちのクラス</strong> </h2>
-
     <div class="row_2">
       <div class="col-2">
         <div>

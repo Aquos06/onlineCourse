@@ -9,47 +9,35 @@
             position: relative;
             margin: auto;
             top:10%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         .row_2{
             display: flex;
             flex-direction: row;
             justify-content: center;
         }
-        .navbar_button{
-            width: 210px;
-            height: 50px;
-        }
-          .primary{
-            background-color: #F2C4CD;
-        }
-          .secondary{
-            background-color: #D9D9D9;
-        }
-          .navbar_button:hover{
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }  
     </style>
     <%- include('./partials/navbar')%>
+    <div class="navbar_bot" style = "background-color: #fde4e2;">
+        <div class="row_2">
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">HOME</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <a href = "/classes" class = "vertical_center_bot">オンライン学習</a>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">先生のプロフィール</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">QnA</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">私たちに関しては </p>
+            </button>
+        </div>
+      </div>
     <div style = "height: 600px; background-color:#fde4e2">
-        <div class="navbar_bot">
-            <div class="row_2">
-                <button class = "navbar_button primary" style = "border: 0px solid transparent">
-                    <p class = "vertical_center_bot">HOME</p>
-                </button>
-                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                    <p class = "vertical_center_bot">オンライン学習</p>
-                </button>
-                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                    <p class = "vertical_center_bot">先生のプロフィール</p>
-                </button>
-                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                    <p class = "vertical_center_bot">QnA</p>
-                </button>
-                <button class = "navbar_button secondary" style = "border: 0px solid transparent">
-                    <p class = "vertical_center_bot">私たちに関しては </p>
-                </button>
-            </div>
-          </div>
         <div class="signin_card">
             <div class = "pt-5">
                 <h3 class = "text-center"><strong>ログイン</strong></h3>
