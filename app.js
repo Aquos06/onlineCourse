@@ -34,6 +34,10 @@ app.get('/classes', (req,res) =>{
     res.render('classes')
 })
 
+app.get('/classes_readmore', (req,res) =>{
+    res.render('class_readmore')
+})
+
 app.listen(3000, ()=>{
     console.log('Listening on port 3000')
 })
