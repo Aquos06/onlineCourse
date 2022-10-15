@@ -1,0 +1,82 @@
+<%- include('../partials/head')%>
+<body>
+    <style>
+        .signin_card{
+            height: 400px;
+            width: 400px;
+            background-color: #bdedfd;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            top:10%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .row_2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+    <%- include('../partials/navbar') %>
+    <div class="navbar_bot" style = "background-color: #fde4e2;">
+        <div class="row_2">
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent" onclick="window.location.href='/';">
+                <p class = "vertical_center_bot">HOME</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent" onclick="window.location.href = '/classes';">
+                <p href = "/classes" class = "vertical_center_bot">オンライン学習</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">先生のプロフィール</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">QnA</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">私たちに関しては </p>
+            </button>
+        </div>
+    </div>
+    <div style = "height: 600px; background-color:#fde4e2">
+        <div class="signin_card">
+            <div class = "pt-3">
+                <h3 class = "text-center"><strong>サインアップ</strong></h3>
+                <p class = "text-center" style = "margin-top: 40px; font-size: 20px;">
+                    中国の等級基準試験を受けましたか？
+                </p>
+                <br>
+                <div style = "display: flex; justify-content: center">
+                    <p class = "text-center" style = "width: 300px; font-size: 20px " >
+                        まだの方は、下のリンクをクリックして参加してください
+                    </p>
+                </div>
+                <div style = "display: flex;justify-content: center;">
+                    <button class = "btn rounded-5" style = "background-color:#FECECD; width:200px; height: 50px; ">
+                        <span>
+                            テストを受けます 
+                        </span>
+                    </button>
+                </div>
+                <div class="row_2 mt-5" >
+                    <div style = "margin-right: auto; margin-left: 10px; ">
+                        <button class = "btn rounded-5" onclick="window.location.href = '/signin';" style = "background-color:#FECECD;">
+                            <span>
+                                PREV
+                            </span>
+                            <iconify-icon icon="akar-icons:arrow-right-thick" flip="horizontal"></iconify-icon>
+                        </button>
+                    </div>
+                    <div style = "margin-left: auto; margin-right:10px;">
+                        <button class = "btn rounded-5" onclick="window.location.href = '/signup/two';" style = "background-color:#FECECD;">
+                            <span>
+                                NEXT
+                            </span>
+                            <iconify-icon icon="akar-icons:arrow-right-thick"></iconify-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>

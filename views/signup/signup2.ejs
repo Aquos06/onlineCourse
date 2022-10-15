@@ -1,0 +1,91 @@
+<%- include('../partials/head')%>
+<body>
+    <style>
+        .signin_card{
+            height: 500px;
+            width: 400px;
+            background-color: #bdedfd;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            top:10%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .row_2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+    <%- include('../partials/navbar') %>
+    <div class="navbar_bot" style = "background-color: #fde4e2;">
+        <div class="row_2">
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent" onclick="window.location.href='/';">
+                <p class = "vertical_center_bot">HOME</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent" onclick="window.location.href = '/classes';">
+                <p href = "/classes" class = "vertical_center_bot">オンライン学習</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">先生のプロフィール</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">QnA</p>
+            </button>
+            <button class = "navbar_button secondary" style = "border: 0px solid transparent">
+                <p class = "vertical_center_bot">私たちに関しては </p>
+            </button>
+        </div>
+    </div>
+    <div style = "height: 600px; background-color:#fde4e2">
+        <div class="signin_card">
+            <div class = "p-3">
+                <h3 class = "text-center"><strong>サインアップ</strong></h3>
+                <form onsubmit="return-false;" id = "form" >
+                    <div class = "nb-3">
+                        <label for = "Name" class ="form-label" ><strong>名前</strong></label>
+                        <input type = "text" class = "form-control rounded-5" id = "name" placeholder="Enter Your Name" autocomplete="on" required>
+                    </div>
+                    <div class = "nb-3">
+                        <label for = "Username" class ="form-label" ><strong>Username</strong></label>
+                        <input type = "text" class = "form-control rounded-5" id = "Username" placeholder="Enter Your Username" autocomplete="off" required>
+                    </div>
+                    <div class = "nb-3">
+                        <label for = "Age" class ="form-label" ><strong>年</strong></label>
+                        <input type = "text" class = "form-control rounded-5" id = "Age" placeholder="Enter Your Age" autocomplete="off" required>
+                    </div>
+                    <div class = "nb-3">
+                        <label for = "AcademyLevel" class ="form-label" ><strong>アカデミーレベル</strong></label>
+                        <input type = "text" class = "form-control rounded-5" id = "AcademyLevel" placeholder="Enter Your Academy Level(eg. University, Elementary)" autocomplete="off" required>
+                    </div>
+                    <div class = "nb-3">
+                        <label for = "TestScore" class ="form-label" ><strong>テストの点数</strong></label>
+                        <input type = "text" class = "form-control rounded-5" id = "TestScore" placeholder="Enter Your Test Score" autocomplete="off" required>
+                    </div>
+                    <div class="alert alert-danger" role="alert"  id="error"   style="display: none;"></div>
+                    <div class="alert alert-success" role="alert" id="success" style="display: none;"></div>
+                    <div class="row_2 mt-5" >
+                        <div style = "margin-right: auto; margin-left: 10px; ">
+                            <button class = "btn rounded-5" onclick="window.location.href = '/signup/one';" style = "background-color:#FECECD;">
+                                <span>
+                                    PREV
+                                </span>
+                                <iconify-icon icon="akar-icons:arrow-right-thick" flip="horizontal"></iconify-icon>
+                            </button>
+                        </div>
+                        <div style = "margin-left: auto; margin-right:10px;">
+                            <button type = "submit" value = "NEXT" class = "btn rounded-5" onclick="window.location.href = '/signup/three';" style = "background-color:#FECECD;">
+                                <span>
+                                    NEXT
+                                </span>
+                                <iconify-icon icon="akar-icons:arrow-right-thick"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src = "./api/signup2"></script>
+    <%- include('../partials/footer') %>
+</body>
