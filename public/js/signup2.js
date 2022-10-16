@@ -1,4 +1,4 @@
-form.addEventListener("submit", ()=>{
+form.addEventListener('submit', ()=>{
     const signup2 = {
         name: Name.value,
         username: Username.value,

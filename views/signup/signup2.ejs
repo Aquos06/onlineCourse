@@ -44,23 +44,23 @@
                 <form onsubmit="return-false;" id = "form" >
                     <div class = "nb-3">
                         <label for = "Name" class ="form-label" ><strong>名前</strong></label>
-                        <input type = "text" class = "form-control rounded-5" id = "name" placeholder="Enter Your Name" autocomplete="on" required>
+                        <input type = "text" class = "form-control rounded-5" id = "name" placeholder="Enter Your Name" autocomplete="on" >
                     </div>
                     <div class = "nb-3">
                         <label for = "Username" class ="form-label" ><strong>Username</strong></label>
-                        <input type = "text" class = "form-control rounded-5" id = "Username" placeholder="Enter Your Username" autocomplete="off" required>
+                        <input type = "text" class = "form-control rounded-5" id = "Username" placeholder="Enter Your Username" autocomplete="off" >
                     </div>
                     <div class = "nb-3">
                         <label for = "Age" class ="form-label" ><strong>年</strong></label>
-                        <input type = "text" class = "form-control rounded-5" id = "Age" placeholder="Enter Your Age" autocomplete="off" required>
+                        <input type = "text" class = "form-control rounded-5" id = "Age" placeholder="Enter Your Age" autocomplete="off" >
                     </div>
                     <div class = "nb-3">
                         <label for = "AcademyLevel" class ="form-label" ><strong>アカデミーレベル</strong></label>
-                        <input type = "text" class = "form-control rounded-5" id = "AcademyLevel" placeholder="Enter Your Academy Level(eg. University, Elementary)" autocomplete="off" required>
+                        <input type = "text" class = "form-control rounded-5" id = "AcademyLevel" placeholder="Enter Your Academy Level(eg. University, Elementary)" autocomplete="off" >
                     </div>
                     <div class = "nb-3">
                         <label for = "TestScore" class ="form-label" ><strong>テストの点数</strong></label>
-                        <input type = "text" class = "form-control rounded-5" id = "TestScore" placeholder="Enter Your Test Score" autocomplete="off" required>
+                        <input type = "text" class = "form-control rounded-5" id = "TestScore" placeholder="Enter Your Test Score" autocomplete="off" >
                     </div>
                     <div class="alert alert-danger" role="alert"  id="error"   style="display: none;"></div>
                     <div class="alert alert-success" role="alert" id="success" style="display: none;"></div>
@@ -74,7 +74,7 @@
                             </button>
                         </div>
                         <div style = "margin-left: auto; margin-right:10px;">
-                            <button type = "submit" value = "NEXT" class = "btn rounded-5" onclick="window.location.href = '/signup/three';" style = "background-color:#FECECD;">
+                            <button type = "submit" value = "NEXT" class = "btn rounded-5"  style = "background-color:#FECECD;" onclick="window.location.href = '/signup/three';">
                                 <span>
                                     NEXT
                                 </span>
@@ -82,10 +82,10 @@
                             </button>
                         </div>
                     </div>
+                    <script src = "./api/signup2"></script>
                 </form>
             </div>
         </div>
     </div>
-    <script src = "./api/signup2"></script>
     <%- include('../partials/footer') %>
 </body>

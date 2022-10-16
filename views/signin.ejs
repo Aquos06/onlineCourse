@@ -40,18 +40,18 @@
     <div style = "height: 600px; background-color:#fde4e2">
         <div class="signin_card p-3">
             <h3 class = "text-center"><strong>ログイン</strong></h3>
-            <form class = "mt-5" onsubmit="return-false;" id = "form">
+            <form class = "mt-5" id = "form">
                 <div class = "nb-3">
-                    <label for = "Username" class = "form-label"><strong>Username</strong></label>
-                    <input type = "text" class = "form-control rounded-5" id = "Username" placeholder="Enter your Username" autocomplete= "on" required>
+                    <label for = "username" class = "form-label"><strong>Username</strong></label>
+                    <input type = "text" class = "form-control" id ="username" placeholder="Enter your Username" >
                 </div>
                 <div class = "nb-3">
-                    <label for = "Password" class = "form-label"><strong>Password</strong></label>
-                    <input type = "password" class = "form-control rounded-5" id = "Password" placeholder="Enter your Password" autocomplete= "on" required>
+                    <label for = "password" class = "form-label"><strong>Password</strong></label>
+                    <input type = "password" class = "form-control" id ="password" placeholder="Enter your Password" >
                 </div>
                 <div class="alert alert-danger" role="alert"  id="error"   style="display: none;"></div>
                 <div class="alert alert-success" role="alert" id="success" style="display: none;"></div>
-                <button class = "btn rounded-5 mt-3" style = "background-color: #FECECD; position:relative; float:right; margin-right:20px"><a>ログイン</a></button>
+                <button type = "submit" class = "btn rounded-5 mt-3" style = "background-color: #FECECD; position:relative; float:right; margin-right:20px" id = "button">ログイン</button>
                 <br>
                 <a href = "/signup/one" style = "text-decoration: none; margin-left:20px;position: absolute; bottom:40px;color:black">Have not make an account?</a>
             </form>

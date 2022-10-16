@@ -1,25 +1,15 @@
-form.addEventListener("submit", ()=>{
-    const register = {
-        username: Username.value,
-        password: Password.value
+let user = document.getElementById("username");
+let pass = document.getElementById("password");
+let button = document.getElementById('button');
+let error = document.querySelector("#error")
+button.onclick=inputChange;
+    
+function inputChange(){
+    x = user.value;
+    y = pass.value;
+    if(x=="" || y==""){
+        error.style.display = 'block';
+        error.innerHTML = "Please Input your Username and Password"
     }
-    fetch("./api/register",{
-        method: "POST",
-        body: JSON.stringify(register),
-        headers: {
-            "Content-Type":"application/json"
-        }
-    }).then(res=> res.json())
-        .then(data=>{
-            if(data.status == "error"){
-                success.style.display = "none"
-                error.style.display = "block"
-                error.innerText = data.error
-            }
-            else{
-                error.style.display = "none"
-                success.style.display = "block"
-                success.innerText = data.success
-            }
-        })
-})
+    
+}
